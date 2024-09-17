@@ -27,6 +27,12 @@
       <div class="d-grid gap-2">
         <button class="btn btn-primary" type="submit">Entrar</button>
       </div>
+      <div style="margin-top: 10px;" class="d-grid gap-2">
+        <p style="text-align: center;">ou</p>
+      </div>
+      <div  class="d-grid gap-2">
+        <a href="pages/verify_solicitations.php" class="btn btn-primary">Verificar solicitações</a>
+      </div>
     </form>
   </div>
 </body>

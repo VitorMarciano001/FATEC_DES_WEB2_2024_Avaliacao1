@@ -10,3 +10,7 @@ html, body{
 .wrapper{
     width: 450PX;
 }
+
+.text-center {
+    text-align: center;
+}

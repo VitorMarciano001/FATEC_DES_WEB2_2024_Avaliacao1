@@ -11,6 +11,10 @@
 
 <body>
   <div class="wrapper">
+    <div style="margin-bottom: 10px;" class="d-grid gap-2">
+      <h1 style="text-align: center;">Seja bem vindo ao TaskTrack</h1>
+      <h3 style="text-align: center;">Vamos logar no sistema?</h3>
+    </div>
     <form action="controller/login_controller.php" method="POST">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Usuario</label>

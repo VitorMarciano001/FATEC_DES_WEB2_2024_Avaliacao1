@@ -29,24 +29,23 @@ if (!isset($_SESSION['$userType']) && $_SESSION['loggedIn'] == true) {
             <h1 style="text-align: center;">Welcome <?php echo $USER; ?> </h1>
 
         </div>
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a href="register_solicitation.php" class="btn btn-danger">Registrar solicitação</a>
-                    </div>
-                    <div class="col order-5">
-                        <a href="" class="btn btn-danger">Verificar solicitação por curso</a>
-                    </div>
-                    <div class="col order-1">
-                        <a href="" class="btn btn-danger">Verificar solicitações</a>
-                    </div>
-                </div>
+        
+        <div  class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4"><?php
+                                            if ($USER == "coordenador") {
+                                                echo '<div class="col"><a href="register_solicitation.php" class="btn btn-danger">Registrar solicitação</a></div>';
+                                            }
+                                            ?></div>
+                <div class="col-6 col-sm-4"><a href="" class="btn btn-danger">Verificar solicitação por curso</a></div>
+
+                <div style="margin-top: 10px; margin-bottom: 10px;" class="w-100 d-none d-md-block"></div>
+
+                <div class="col-6 col-sm-4"><a href="verify_solicitations.php" class="btn btn-danger">Verificar solicitações</a></div>
+                <div class="col-6 col-sm-4"><a href="../controller/logout_controller.php" class="btn btn-danger">Sair da conta</a></div>
             </div>
         </div>
 
-    </div>
-    <a href="../controller/logout_controller.php" class="btn btn-danger">Sair da conta</a>
 
 </body>
 

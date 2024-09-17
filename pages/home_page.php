@@ -39,7 +39,7 @@ if (!isset($_SESSION['$userType']) && $_SESSION['loggedIn'] == true) {
                     ?>
                 </div>
                 <div class="col-6 col-sm-4 text-center">
-                    <a href="" class="btn btn-danger">Verificar solicitação por curso</a>
+                    <a href="../pages/verify_content_by_course.php" class="btn btn-danger">Verificar solicitação por curso</a>
                 </div>
                 <div style="margin-top: 10px; margin-bottom: 10px;" class="w-100 d-none d-md-block"></div>
                 <div class="col-6 col-sm-4 text-center">
